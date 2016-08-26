@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML 5 Canvas</title>
+	<style type="text/css">
+		canvas {
+			border: 1px solid #000000;
+		}
+	</style>
+	<script type="text/javascript">
+		var c;
+		var ctx;
+		function init(){
+			c=document.getElementById('myCanvas');
+			ctx=c.getContext('2d');
+			draw();
+		}
+		function draw(){
+			var posX = 0;
+			var posY = 0;
+			setInterval(function(){
+				posX+=1;
+				posY+=1;
+				ctx.fillStyle="black";
+				ctx.fillRect(0,0,c.width,c.height);
+				ctx.fillStyle="white";
+				ctx.beginPath();
+				ctx.arc(posX,150,55,0,Math.PI*2);
+				ctx.fill();
+				ctx.fillStyle="green";
+				ctx.beginPath();
+				ctx.arc(120,posY,25,0,Math.PI*2);
+				ctx.fill();
+				ctx.fillStyle="red";
+				ctx.beginPath();
+				ctx.arc(posX,posY,30,0,Math.PI*2);
+				ctx.fill();
+			},30);
+		}
+	</script>
+</head>
+<body onload="init()">
+<canvas id="myCanvas" width="600" height="400">
+</canvas>
+
+</body>
+</html>

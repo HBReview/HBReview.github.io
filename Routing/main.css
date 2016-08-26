@@ -1,0 +1,50 @@
+body{
+	background-image: url('image/hello.jpg');
+}
+header{
+	background: 	#F0FFFF;
+	width:100%;
+	padding: 20px;
+	float: left;
+	
+}
+
+nav{
+	float: right;
+
+}
+nav ul li{
+	padding: 4px;
+    
+	background: #F0FFFF;
+	display: inline;
+	
+}
+ul{
+	word-spacing: 20px;
+}
+
+
+.mainContent{
+	padding-left: 10px;
+	margin:0px auto;
+	width: 90%;
+	height: 500px;
+	border: 1px solid black;
+	overflow: auto;
+}
+footer{
+	background: 	#F0FFFF;
+	clear: both;
+	width:100%;
+	padding: 20px;
+	text-align: center;
+}
+#mainForm{
+	border: 1px solid black;
+	width:70%;
+	text-align: center;
+	padding: 40px;
+	margin: 200px auto;
+	overflow: auto;
+}
